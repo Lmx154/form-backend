@@ -16,7 +16,7 @@ const recaptcha = new RecaptchaV3(process.env.RECAPTCHA_SITE_KEY, process.env.RE
 
 // Nodemailer setup
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: 'smtp.mailtrap.io',
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS
